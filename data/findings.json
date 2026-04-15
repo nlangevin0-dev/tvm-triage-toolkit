@@ -1,0 +1,361 @@
+{
+  "report": {
+    "name": "Network Infrastructure Vulnerability Scan",
+    "scan_start": "2026-04-12T02:00:00Z",
+    "scan_end": "2026-04-12T04:37:22Z",
+    "scanner": "Nessus Professional 10.8.3",
+    "policy": "Advanced Network Scan",
+    "target": "10.0.0.0/24"
+  },
+  "findings": [
+    {
+      "plugin_id": 57582,
+      "plugin_name": "SSL Self-Signed Certificate",
+      "severity": "Medium",
+      "cvss_v3_base_score": 6.5,
+      "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "risk_factor": "Medium",
+      "description": "The X.509 certificate chain for this service is not signed by a recognized certificate authority. A self-signed certificate cannot be trusted because any attacker could generate one.",
+      "solution": "Purchase or generate a proper SSL certificate from a trusted Certificate Authority.",
+      "see_also": [
+        "https://www.tenable.com/plugins/nessus/57582"
+      ],
+      "affected_hosts": [
+        {
+          "ip": "10.0.0.12",
+          "hostname": "webserver01.internal.local",
+          "port": 443,
+          "protocol": "tcp",
+          "service": "www"
+        }
+      ],
+      "plugin_output": "The following certificate was found at the top of the certificate chain sent by the remote host, but is self-signed and was not found in the known certificate store:\n\n  Subject: CN=webserver01.internal.local\n  Issuer: CN=webserver01.internal.local\n  Valid From: Jan 15 00:00:00 2025 GMT\n  Valid To: Jan 15 23:59:59 2027 GMT",
+      "first_discovered": "2026-03-10T02:15:00Z",
+      "last_observed": "2026-04-12T02:22:14Z",
+      "cve": [],
+      "exploit_available": false
+    },
+    {
+      "plugin_id": 11219,
+      "plugin_name": "Nessus SYN Scanner - Open Ports Detected",
+      "severity": "Informational",
+      "cvss_v3_base_score": 0.0,
+      "cvss_v3_vector": "N/A",
+      "risk_factor": "None",
+      "description": "One or more open ports were detected on the remote host via a SYN scan.",
+      "solution": "Ensure that only required ports are open and that access is restricted via firewall rules or ACLs.",
+      "see_also": [
+        "https://www.tenable.com/plugins/nessus/11219"
+      ],
+      "affected_hosts": [
+        {
+          "ip": "10.0.0.5",
+          "hostname": "fw-mgmt01.internal.local",
+          "port": 22,
+          "protocol": "tcp",
+          "service": "ssh"
+        },
+        {
+          "ip": "10.0.0.5",
+          "hostname": "fw-mgmt01.internal.local",
+          "port": 443,
+          "protocol": "tcp",
+          "service": "www"
+        },
+        {
+          "ip": "10.0.0.5",
+          "hostname": "fw-mgmt01.internal.local",
+          "port": 8443,
+          "protocol": "tcp",
+          "service": "www"
+        }
+      ],
+      "plugin_output": "Port 22/tcp was found to be open.\nPort 443/tcp was found to be open.\nPort 8443/tcp was found to be open.",
+      "first_discovered": "2026-01-08T02:10:00Z",
+      "last_observed": "2026-04-12T02:05:33Z",
+      "cve": [],
+      "exploit_available": false
+    },
+    {
+      "plugin_id": 104743,
+      "plugin_name": "TLS Version 1.0 Protocol Detection",
+      "severity": "Medium",
+      "cvss_v3_base_score": 6.5,
+      "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N",
+      "risk_factor": "Medium",
+      "description": "The remote service accepts connections encrypted using TLS 1.0. TLS 1.0 has known cryptographic design flaws and is no longer considered secure. PCI DSS and most compliance frameworks mandate disabling TLS 1.0.",
+      "solution": "Disable TLS 1.0 and enable TLS 1.2 or TLS 1.3 on the remote server.",
+      "see_also": [
+        "https://www.tenable.com/plugins/nessus/104743",
+        "https://datatracker.ietf.org/doc/html/rfc8996"
+      ],
+      "affected_hosts": [
+        {
+          "ip": "10.0.0.20",
+          "hostname": "legacyapp.internal.local",
+          "port": 443,
+          "protocol": "tcp",
+          "service": "www"
+        },
+        {
+          "ip": "10.0.0.21",
+          "hostname": "erp-frontend.internal.local",
+          "port": 8443,
+          "protocol": "tcp",
+          "service": "www"
+        }
+      ],
+      "plugin_output": "TLSv1 is enabled and the server accepts at least one cipher:\n  TLS1_CK_RSA_WITH_AES_128_CBC_SHA\n  TLS1_CK_RSA_WITH_AES_256_CBC_SHA",
+      "first_discovered": "2025-11-03T02:30:00Z",
+      "last_observed": "2026-04-12T02:41:07Z",
+      "cve": [],
+      "exploit_available": false
+    },
+    {
+      "plugin_id": 42873,
+      "plugin_name": "SSL Medium Strength Cipher Suites Supported (SWEET32)",
+      "severity": "Medium",
+      "cvss_v3_base_score": 5.3,
+      "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "risk_factor": "Medium",
+      "description": "The remote host supports the use of SSL ciphers that use 64-bit block ciphers (3DES/DES). These are susceptible to birthday attacks (SWEET32) which can allow an attacker to recover plaintext.",
+      "solution": "Reconfigure the affected application to avoid use of medium strength ciphers. Disable 3DES and DES cipher suites.",
+      "see_also": [
+        "https://sweet32.info",
+        "https://www.tenable.com/plugins/nessus/42873"
+      ],
+      "affected_hosts": [
+        {
+          "ip": "10.0.0.20",
+          "hostname": "legacyapp.internal.local",
+          "port": 443,
+          "protocol": "tcp",
+          "service": "www"
+        }
+      ],
+      "plugin_output": "Medium Strength Ciphers (> 64-bit and < 112-bit key):\n  TLS1_CK_RSA_WITH_3DES_EDE_CBC_SHA   Kx=RSA  Au=RSA  Enc=3DES-CBC(168)  Mac=SHA1",
+      "first_discovered": "2025-11-03T02:30:00Z",
+      "last_observed": "2026-04-12T02:41:09Z",
+      "cve": [
+        "CVE-2016-2183"
+      ],
+      "exploit_available": false
+    },
+    {
+      "plugin_id": 10863,
+      "plugin_name": "SSL Certificate Expiry",
+      "severity": "Critical",
+      "cvss_v3_base_score": 9.1,
+      "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "risk_factor": "Critical",
+      "description": "The remote server's SSL certificate has already expired. Users connecting to this service will receive browser warnings, and the validity of the encrypted connection cannot be guaranteed.",
+      "solution": "Renew the SSL certificate immediately from a trusted Certificate Authority.",
+      "see_also": [
+        "https://www.tenable.com/plugins/nessus/10863"
+      ],
+      "affected_hosts": [
+        {
+          "ip": "10.0.0.35",
+          "hostname": "vpn-portal.internal.local",
+          "port": 443,
+          "protocol": "tcp",
+          "service": "www"
+        }
+      ],
+      "plugin_output": "The SSL certificate has already expired:\n\n  Subject: CN=vpn-portal.internal.local, O=ACME Corp, C=US\n  Issuer: CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1\n  Not After: Mar 01 12:00:00 2026 GMT\n\n  Certificate expired 42 days ago.",
+      "first_discovered": "2026-03-02T02:18:00Z",
+      "last_observed": "2026-04-12T02:28:55Z",
+      "cve": [],
+      "exploit_available": false
+    },
+    {
+      "plugin_id": 20007,
+      "plugin_name": "SSH Server CBC Mode Ciphers Enabled",
+      "severity": "Low",
+      "cvss_v3_base_score": 3.7,
+      "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "risk_factor": "Low",
+      "description": "The SSH server is configured to support Cipher Block Chaining (CBC) mode ciphers. This may allow an attacker to recover plaintext from ciphertext in an SSH session.",
+      "solution": "Disable CBC mode ciphers in the SSH server configuration. Use CTR or GCM mode ciphers instead.",
+      "see_also": [
+        "https://www.tenable.com/plugins/nessus/20007"
+      ],
+      "affected_hosts": [
+        {
+          "ip": "10.0.0.50",
+          "hostname": "jumpbox01.internal.local",
+          "port": 22,
+          "protocol": "tcp",
+          "service": "ssh"
+        },
+        {
+          "ip": "10.0.0.51",
+          "hostname": "buildserver.internal.local",
+          "port": 22,
+          "protocol": "tcp",
+          "service": "ssh"
+        }
+      ],
+      "plugin_output": "The following CBC ciphers are supported by the remote SSH server:\n  aes128-cbc\n  aes192-cbc\n  aes256-cbc\n  3des-cbc",
+      "first_discovered": "2026-02-14T02:22:00Z",
+      "last_observed": "2026-04-12T02:35:41Z",
+      "cve": [],
+      "exploit_available": false
+    },
+    {
+      "plugin_id": 156032,
+      "plugin_name": "Apache Log4j Remote Code Execution (Log4Shell)",
+      "severity": "Critical",
+      "cvss_v3_base_score": 10.0,
+      "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "risk_factor": "Critical",
+      "description": "The remote host is running an application that uses a version of Apache Log4j affected by a remote code execution vulnerability. An unauthenticated attacker can exploit this by sending a specially crafted request containing a JNDI lookup, leading to full system compromise.",
+      "solution": "Upgrade Apache Log4j to version 2.17.1 or later. As a mitigation, set log4j2.formatMsgNoLookups=true or remove the JndiLookup class from the classpath.",
+      "see_also": [
+        "https://logging.apache.org/log4j/2.x/security.html",
+        "https://www.tenable.com/plugins/nessus/156032"
+      ],
+      "affected_hosts": [
+        {
+          "ip": "10.0.0.101",
+          "hostname": "appserver-java03.internal.local",
+          "port": 8080,
+          "protocol": "tcp",
+          "service": "www"
+        }
+      ],
+      "plugin_output": "Installed version: Apache Log4j 2.14.1\nFixed version: 2.17.1\n\nThe remote application responded to a JNDI injection payload, confirming the host is vulnerable.",
+      "first_discovered": "2025-06-20T02:45:00Z",
+      "last_observed": "2026-04-12T03:12:08Z",
+      "cve": [
+        "CVE-2021-44228",
+        "CVE-2021-45046",
+        "CVE-2021-45105"
+      ],
+      "exploit_available": true,
+      "exploit_frameworks": [
+        "Metasploit",
+        "Core Impact"
+      ]
+    },
+    {
+      "plugin_id": 58987,
+      "plugin_name": "SMB Signing Not Required",
+      "severity": "Medium",
+      "cvss_v3_base_score": 5.3,
+      "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "risk_factor": "Medium",
+      "description": "SMB signing is not required on the remote host. An unauthenticated attacker can exploit this to conduct man-in-the-middle attacks and relay SMB authentication to other hosts.",
+      "solution": "Enable mandatory SMB signing in the host's network security policy. On Windows, configure 'Microsoft network server: Digitally sign communications (always)' to Enabled via Group Policy.",
+      "see_also": [
+        "https://www.tenable.com/plugins/nessus/58987"
+      ],
+      "affected_hosts": [
+        {
+          "ip": "10.0.0.200",
+          "hostname": "fileserver01.internal.local",
+          "port": 445,
+          "protocol": "tcp",
+          "service": "cifs"
+        },
+        {
+          "ip": "10.0.0.201",
+          "hostname": "dc-backup.internal.local",
+          "port": 445,
+          "protocol": "tcp",
+          "service": "cifs"
+        }
+      ],
+      "plugin_output": "SMB signing is supported but not required on the remote host.",
+      "first_discovered": "2026-01-08T02:55:00Z",
+      "last_observed": "2026-04-12T03:01:22Z",
+      "cve": [],
+      "exploit_available": true,
+      "exploit_frameworks": [
+        "Metasploit (ntlmrelayx)"
+      ]
+    },
+    {
+      "plugin_id": 97833,
+      "plugin_name": "Microsoft Windows SMBv1 Enabled (EternalBlue)",
+      "severity": "High",
+      "cvss_v3_base_score": 8.1,
+      "cvss_v3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "risk_factor": "High",
+      "description": "The remote Windows host has SMBv1 enabled. SMBv1 is a legacy protocol with known critical vulnerabilities including EternalBlue (MS17-010). Microsoft recommends disabling SMBv1 on all systems.",
+      "solution": "Disable SMBv1 on the remote host. On Windows Server, run: Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol",
+      "see_also": [
+        "https://www.tenable.com/plugins/nessus/97833",
+        "https://support.microsoft.com/en-us/topic/how-to-detect-enable-and-disable-smbv1-smbv2-and-smbv3-in-windows"
+      ],
+      "affected_hosts": [
+        {
+          "ip": "10.0.0.200",
+          "hostname": "fileserver01.internal.local",
+          "port": 445,
+          "protocol": "tcp",
+          "service": "cifs"
+        }
+      ],
+      "plugin_output": "SMBv1 is enabled on the remote host.\n\nOS: Windows Server 2016 Standard 14393\nSMBv1 Status: Enabled\nSMBv2 Status: Enabled",
+      "first_discovered": "2025-09-15T02:50:00Z",
+      "last_observed": "2026-04-12T03:01:30Z",
+      "cve": [
+        "CVE-2017-0143",
+        "CVE-2017-0144",
+        "CVE-2017-0145"
+      ],
+      "exploit_available": true,
+      "exploit_frameworks": [
+        "Metasploit",
+        "Core Impact"
+      ]
+    },
+    {
+      "plugin_id": 12085,
+      "plugin_name": "Apache HTTP Server Version Detection (End of Life)",
+      "severity": "High",
+      "cvss_v3_base_score": 7.5,
+      "cvss_v3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "risk_factor": "High",
+      "description": "The remote host is running an end-of-life version of Apache HTTP Server (2.4.49). This version is no longer maintained and contains known path traversal and remote code execution vulnerabilities. No further security patches will be provided by the vendor.",
+      "solution": "Upgrade Apache HTTP Server to the latest supported version (2.4.62 or later).",
+      "see_also": [
+        "https://httpd.apache.org/security/vulnerabilities_24.html",
+        "https://www.tenable.com/plugins/nessus/12085"
+      ],
+      "affected_hosts": [
+        {
+          "ip": "10.0.0.102",
+          "hostname": "intranet.internal.local",
+          "port": 80,
+          "protocol": "tcp",
+          "service": "www"
+        }
+      ],
+      "plugin_output": "Installed version: Apache/2.4.49 (Ubuntu)\nEOL Date: N/A (critical vulnerabilities unpatched)\nLatest version: 2.4.62\n\nKnown exploitable vulnerabilities in this version include path traversal (CVE-2021-41773) and RCE (CVE-2021-42013).",
+      "first_discovered": "2025-08-22T02:40:00Z",
+      "last_observed": "2026-04-12T03:18:44Z",
+      "cve": [
+        "CVE-2021-41773",
+        "CVE-2021-42013"
+      ],
+      "exploit_available": true,
+      "exploit_frameworks": [
+        "Metasploit",
+        "Nuclei"
+      ]
+    }
+  ],
+  "summary": {
+    "total_findings": 10,
+    "critical": 2,
+    "high": 2,
+    "medium": 4,
+    "low": 1,
+    "informational": 1,
+    "total_affected_hosts": 11,
+    "unique_affected_hosts": 10,
+    "exploitable_findings": 4
+  }
+}

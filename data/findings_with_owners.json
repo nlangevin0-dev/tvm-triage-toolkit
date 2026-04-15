@@ -1,0 +1,12 @@
+[
+    {"hostname": "fw-edge-01", "title": "PAN-OS Auth Bypass", "severity": "Critical", "owner": "Mike Chen"},
+    {"hostname": "rtr-core-02", "title": "RCE in IOS", "severity": "Critical", "owner": "Mike Chen"},
+    {"hostname": "sw-access-01", "title": "Weak SSH Algorithms", "severity": "Medium", "owner": "Sarah Kim"},
+    {"hostname": "rtr-wan-01", "title": "Command Injection", "severity": "High", "owner": "Sarah Kim"},
+    {"hostname": "sw-dist-01", "title": "Telnet Enabled", "severity": "High", "owner": "James Porter"},
+    {"hostname": "sw-ot-01", "title": "SNMP Default Community", "severity": "High", "owner": "Lisa Tran"},
+    {"hostname": "sw-access-03", "title": "Outdated Firmware", "severity": "Medium", "owner": "Sarah Kim"},
+    {"hostname": "fw-internal-01", "title": "Default Admin Password", "severity": "Critical", "owner": "Lisa Tran"},
+    {"hostname": "rtr-edge-02", "title": "CDP Enabled Externally", "severity": "Medium", "owner": "James Porter"},
+    {"hostname": "sw-core-02", "title": "HTTP Server Enabled", "severity": "High", "owner": "Mike Chen"}
+]

@@ -1,0 +1,20 @@
+{
+    "55902": {
+        "fix": "Upgrade Cisco IOS to version 17.3.8 or later",
+        "commands": "show version\nverify current version\ndownload updated image from cisco.com\ncopy tftp flash\nreload",
+        "type": "firmware_upgrade",
+        "downtime_required": true
+    },
+    "78432": {
+        "fix": "Apply PAN-OS hotfix 11.1.2-h3",
+        "commands": "Download hotfix from Palo Alto support portal\nInstall via Device > Software\nReboot required",
+        "type": "hotfix",
+        "downtime_required": true
+    },
+    "91345": {
+        "fix": "Disable vulnerable HTTP service and apply ACL to management interface",
+        "commands": "no ip http server\nno ip http secure-server\nip access-list extended MGMT-ACCESS\npermit tcp 10.0.0.0 0.0.0.255 any eq 22\ndeny ip any any",
+        "type": "config_change",
+        "downtime_required": false
+    }
+}

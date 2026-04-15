@@ -1,0 +1,10 @@
+[
+  {"hostname": "core-sw-01", "ip": "10.1.1.1", "type": "switch", "telnet_enabled": false, "snmp_community": "Xk9#mP2q"},
+  {"hostname": "edge-rtr-01", "ip": "10.1.2.1", "type": "router", "telnet_enabled": true, "snmp_community": "s3cur3Str!ng"},
+  {"hostname": "fw-dmz-01", "ip": "10.1.3.1", "type": "firewall", "telnet_enabled": false, "snmp_community": "public"},
+  {"hostname": "access-sw-12", "ip": "10.2.1.12", "type": "switch", "telnet_enabled": true, "snmp_community": "public"},
+  {"hostname": "core-rtr-02", "ip": "10.1.2.2", "type": "router", "telnet_enabled": false, "snmp_community": "Rt#7vLm!"},
+  {"hostname": "oob-sw-01", "ip": "172.16.0.1", "type": "switch", "telnet_enabled": true, "snmp_community": "n0tPubl1c"},
+  {"hostname": "dist-sw-03", "ip": "10.3.1.3", "type": "switch", "telnet_enabled": false, "snmp_community": "public"},
+  {"hostname": "wan-rtr-05", "ip": "10.5.0.1", "type": "router", "telnet_enabled": false, "snmp_community": "W@nSecure9"}
+]

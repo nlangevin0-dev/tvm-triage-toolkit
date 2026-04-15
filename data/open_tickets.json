@@ -1,8 +1,63 @@
 [
-    {"ticket_id": "TKT-001", "hostname": "fw-edge-01", "title": "PAN-OS Authentication Bypass", "exploitability": "CRITICAL", "owner": "Mike Chen", "opened": "2026-03-15", "deadline": "2026-04-14", "status": "open"},
-    {"ticket_id": "TKT-002", "hostname": "rtr-wan-01", "title": "Cisco IOS Command Injection", "exploitability": "HIGH", "owner": "Sarah Kim", "opened": "2026-03-20", "deadline": "2026-04-19", "status": "open"},
-    {"ticket_id": "TKT-003", "hostname": "rtr-core-02", "title": "Remote Code Execution in IOS", "exploitability": "LOW", "owner": "Mike Chen", "opened": "2026-03-10", "deadline": "2026-06-08", "status": "open"},
-    {"ticket_id": "TKT-004", "hostname": "sw-dist-01", "title": "Telnet Service Enabled", "exploitability": "HIGH", "owner": "James Porter", "opened": "2026-02-15", "deadline": "2026-03-17", "status": "open"},
-    {"ticket_id": "TKT-005", "hostname": "fw-internal-01", "title": "Fortinet Admin Password Default", "exploitability": "CRITICAL", "owner": "Lisa Tran", "opened": "2026-03-01", "deadline": "2026-03-31", "status": "remediated"},
-    {"ticket_id": "TKT-006", "hostname": "sw-access-03", "title": "SNMP Default Community String", "exploitability": "HIGH", "owner": "Sarah Kim", "opened": "2026-03-05", "deadline": "2026-04-04", "status": "open"}
+    {
+        "ticket_id": "TKT-001",
+        "hostname": "fw-edge-01",
+        "title": "PAN-OS Authentication Bypass",
+        "exploitability": "CRITICAL",
+        "cve": "CVE-2024-5678",
+        "owner": "Mike Chen",
+        "opened": "2026-03-15",
+        "deadline": "2026-04-14",
+        "status": "open"
+    },
+    {
+        "ticket_id": "TKT-002",
+        "hostname": "rtr-wan-01",
+        "title": "Cisco IOS Command Injection",
+        "exploitability": "HIGH",
+        "owner": "Sarah Kim",
+        "opened": "2026-03-20",
+        "deadline": "2026-04-19",
+        "status": "open"
+    },
+    {
+        "ticket_id": "TKT-003",
+        "hostname": "rtr-core-02",
+        "title": "Remote Code Execution in IOS",
+        "exploitability": "LOW",
+        "owner": "Mike Chen",
+        "opened": "2026-03-10",
+        "deadline": "2026-06-08",
+        "status": "open"
+    },
+    {
+        "ticket_id": "TKT-004",
+        "hostname": "sw-dist-01",
+        "title": "Telnet Service Enabled",
+        "exploitability": "HIGH",
+        "owner": "James Porter",
+        "opened": "2026-02-15",
+        "deadline": "2026-03-17",
+        "status": "open"
+    },
+    {
+        "ticket_id": "TKT-005",
+        "hostname": "fw-internal-01",
+        "title": "Fortinet Admin Password Default",
+        "exploitability": "CRITICAL",
+        "owner": "Lisa Tran",
+        "opened": "2026-03-01",
+        "deadline": "2026-03-31",
+        "status": "remediated"
+    },
+    {
+        "ticket_id": "TKT-006",
+        "hostname": "sw-access-03",
+        "title": "SNMP Default Community String",
+        "exploitability": "HIGH",
+        "owner": "Sarah Kim",
+        "opened": "2026-03-05",
+        "deadline": "2026-04-04",
+        "status": "open"
+    }
 ]

@@ -1,0 +1,7 @@
+[
+    {"hostname": "fw-edge-01", "cve": "CVE-2024-5678", "severity": "Critical"},
+    {"hostname": "rtr-core-02", "cve": "CVE-2024-1234", "severity": "Critical"},
+    {"hostname": "rtr-wan-01", "cve": "CVE-2024-9012", "severity": "High"},
+    {"hostname": "sw-dist-01", "cve": "CVE-2023-4455", "severity": "Medium"},
+    {"hostname": "sw-access-01", "cve": "CVE-2024-3333", "severity": "High"}
+]
