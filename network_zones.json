@@ -1,0 +1,7 @@
+[
+    {"host": "10.0.1.2", "hostname": "rtr-core-02", "zone": "internal_core", "internet_facing": false, "firewalls_between": 3},
+    {"host": "10.0.3.1", "hostname": "fw-edge-01", "zone": "perimeter", "internet_facing": true, "firewalls_between": 0},
+    {"host": "10.0.5.1", "hostname": "rtr-wan-01", "zone": "wan_edge", "internet_facing": true, "firewalls_between": 1},
+    {"host": "10.0.2.1", "hostname": "sw-access-01", "zone": "internal_access", "internet_facing": false, "firewalls_between": 1},
+    {"host": "10.0.6.1", "hostname": "sw-dist-01", "zone": "distribution", "internet_facing": false, "firewalls_between": 2}
+]

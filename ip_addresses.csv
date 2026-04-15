@@ -1,0 +1,6 @@
+ip,hostname
+10.0.1.2,rtr-core-02
+10.0.3.1,fw-edge-01
+10.0.5.1,rtr-wan-01
+10.0.2.1,sw-access-01
+10.0.6.1,sw-dist-01
