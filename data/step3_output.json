@@ -1,0 +1,44 @@
+[
+    {
+        "plugin_id": 55902,
+        "host": "10.0.1.2",
+        "hostname": "rtr-core-02",
+        "device_type": "Cisco IOS",
+        "severity": "Critical",
+        "cvss": 9.8,
+        "vpr": 9.1,
+        "title": "Remote Code Execution in IOS",
+        "cve": "CVE-2024-1234",
+        "exploitability": "LOW",
+        "deadline": "2026-07-15",
+        "fix": "Upgrade Cisco IOS to version 17.3.8 or later"
+    },
+    {
+        "plugin_id": 78432,
+        "host": "10.0.3.1",
+        "hostname": "fw-edge-01",
+        "device_type": "Palo Alto",
+        "severity": "Critical",
+        "cvss": 9.1,
+        "vpr": 8.7,
+        "title": "PAN-OS Authentication Bypass",
+        "cve": "CVE-2024-5678",
+        "exploitability": "CRITICAL",
+        "deadline": "2026-05-16",
+        "fix": "Apply PAN-OS hotfix 11.1.2-h3"
+    },
+    {
+        "plugin_id": 91345,
+        "host": "10.0.5.1",
+        "hostname": "rtr-wan-01",
+        "device_type": "Cisco IOS",
+        "severity": "High",
+        "cvss": 8.1,
+        "vpr": 7.3,
+        "title": "Cisco IOS Command Injection",
+        "cve": "CVE-2024-9012",
+        "exploitability": "HIGH",
+        "deadline": "2026-05-16",
+        "fix": "Disable vulnerable HTTP service and apply ACL to management interface"
+    }
+]
