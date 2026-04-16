@@ -5,7 +5,7 @@ from collections import Counter
 owner_count = Counter()
 owner_overdue = Counter()
 
-with open('open_tickets.json', 'r') as f:
+with open('../data/open_tickets.json', 'r') as f:
     data = json.load(f)
 
 for ticket in data:
@@ -34,5 +34,5 @@ print(f"Overdue: {sum(owner_overdue.values())}")
 print(f"Open: {len([t for t in data if t.get('sla_status') != 'CLOSED'])}")
 print(f"Closed: {len([t for t in data if t.get('sla_status') == 'CLOSED'])}")
 
-with open('step4_output.json', 'w') as out:
+with open('../data/step4_output.json', 'w') as out:
     json.dump(data, out, indent=2)
