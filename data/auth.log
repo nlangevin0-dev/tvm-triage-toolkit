@@ -1,0 +1,14 @@
+Apr 21 10:23:45 server sshd[1234]: Failed password for root from 203.0.113.47 port 22 ssh2
+Apr 21 10:23:46 server sshd[1234]: Failed password for root from 203.0.113.47 port 22 ssh2
+Apr 21 10:23:47 server sshd[1234]: Failed password for admin from 198.51.100.23 port 22 ssh2
+Apr 21 10:23:48 server sshd[1234]: Failed password for root from 203.0.113.47 port 22 ssh2
+Apr 21 10:23:49 server sshd[1234]: Failed password for root from 203.0.113.47 port 22 ssh2
+Apr 21 10:23:50 server sshd[1234]: Failed password for admin from 198.51.100.23 port 22 ssh2
+Apr 21 10:23:51 server sshd[1234]: Failed password for root from 203.0.113.47 port 22 ssh2
+Apr 21 10:23:52 server sshd[1234]: Failed password for root from 203.0.113.47 port 22 ssh2
+Apr 21 10:23:53 server sshd[1234]: Failed password for root from 203.0.113.47 port 22 ssh2
+Apr 21 10:23:54 server sshd[1234]: Failed password for root from 203.0.113.47 port 22 ssh2
+Apr 21 10:23:55 server sshd[1234]: Failed password for root from 203.0.113.47 port 22 ssh2
+Apr 21 10:23:56 server sshd[1234]: Failed password for root from 203.0.113.47 port 22 ssh2
+Apr 21 10:23:57 server sshd[1234]: Failed password for admin from 192.0.2.45 port 22 ssh2
+Apr 21 10:23:58 server sshd[1234]: Failed password for root from 203.0.113.47 port 22 ssh2
