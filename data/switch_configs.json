@@ -1,0 +1,8 @@
+[
+    {"hostname": "sw-dc-east-01", "ip": "10.0.1.1", "http_server": true, "ssh_version": 2, "telnet": false, "snmp_version": "v3", "banner": true, "ntp_configured": true},
+    {"hostname": "rtr-core-01", "ip": "10.0.1.2", "http_server": false, "ssh_version": 2, "telnet": false, "snmp_version": "v3", "banner": true, "ntp_configured": false},
+    {"hostname": "sw-access-01", "ip": "10.0.2.1", "http_server": true, "ssh_version": 1, "telnet": true, "snmp_version": "v2c", "banner": false, "ntp_configured": false},
+    {"hostname": "fw-edge-01", "ip": "10.0.3.1", "http_server": false, "ssh_version": 2, "telnet": false, "snmp_version": "v3", "banner": true, "ntp_configured": true},
+    {"hostname": "rtr-wan-01", "ip": "10.0.5.1", "http_server": true, "ssh_version": 2, "telnet": false, "snmp_version": "v2c", "banner": true, "ntp_configured": true},
+    {"hostname": "sw-ot-01", "ip": "10.0.4.1", "http_server": true, "ssh_version": 1, "telnet": true, "snmp_version": "v1", "banner": false, "ntp_configured": false}
+]
