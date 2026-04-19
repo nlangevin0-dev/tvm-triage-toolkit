@@ -1,0 +1,10 @@
+[
+    {"hostname": "sw-dc-east-01", "vendor": "Cisco", "model": "Catalyst 9300", "firmware": "17.3.4"},
+    {"hostname": "rtr-core-01", "vendor": "Cisco", "model": "ISR 4451", "firmware": "17.3.8"},
+    {"hostname": "sw-access-01", "vendor": "Juniper", "model": "EX4300", "firmware": "21.2R3"},
+    {"hostname": "fw-edge-01", "vendor": "Palo Alto", "model": "PA-5250", "firmware": "11.1.2"},
+    {"hostname": "rtr-wan-01", "vendor": "Cisco", "model": "ISR 4451", "firmware": "17.2.1"},
+    {"hostname": "sw-ot-01", "vendor": "Cisco", "model": "Catalyst 9300", "firmware": "16.12.4"},
+    {"hostname": "rtr-edge-02", "vendor": "Juniper", "model": "MX204", "firmware": "22.1R1"},
+    {"hostname": "fw-internal-01", "vendor": "Palo Alto", "model": "PA-850", "firmware": "10.2.3"}
+]

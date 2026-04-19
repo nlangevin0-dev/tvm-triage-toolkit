@@ -1,0 +1,7 @@
+[
+    {"vendor": "Cisco", "model": "Catalyst 9300", "firmware": "17.3.4", "cve": "CVE-2024-1234", "severity": "Critical"},
+    {"vendor": "Cisco", "model": "ISR 4451", "firmware": "17.2.1", "cve": "CVE-2024-5555", "severity": "High"},
+    {"vendor": "Palo Alto", "model": "PA-850", "firmware": "10.2.3", "cve": "CVE-2024-5678", "severity": "Critical"},
+    {"vendor": "Juniper", "model": "EX4300", "firmware": "21.2R3", "cve": "CVE-2024-7777", "severity": "Medium"},
+    {"vendor": "Cisco", "model": "Catalyst 9300", "firmware": "16.12.4", "cve": "CVE-2023-9999", "severity": "Critical"}
+]
