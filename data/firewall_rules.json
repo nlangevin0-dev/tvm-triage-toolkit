@@ -1,0 +1,10 @@
+[
+    {"rule_id": 1, "source": "10.0.1.0/24", "destination": "10.0.2.0/24", "port": 443, "action": "permit"},
+    {"rule_id": 2, "source": "0.0.0.0/0", "destination": "10.0.1.0/24", "port": 22, "action": "permit"},
+    {"rule_id": 3, "source": "192.168.1.0/24", "destination": "10.0.3.0/24", "port": 3389, "action": "permit"},
+    {"rule_id": 4, "source": "0.0.0.0/0", "destination": "10.0.5.0/24", "port": 23, "action": "permit"},
+    {"rule_id": 5, "source": "10.0.0.0/8", "destination": "10.0.4.0/24", "port": 443, "action": "permit"},
+    {"rule_id": 6, "source": "0.0.0.0/0", "destination": "10.0.6.0/24", "port": 3389, "action": "permit"},
+    {"rule_id": 7, "source": "0.0.0.0/0", "destination": "10.0.7.0/24", "port": 80, "action": "permit"},
+    {"rule_id": 8, "source": "10.0.1.0/24", "destination": "10.0.8.0/24", "port": 22, "action": "permit"}
+]
