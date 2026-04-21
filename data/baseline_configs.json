@@ -1,0 +1,7 @@
+{
+    "sw-dc-east-01": {"ssh_version": 2, "telnet": false, "http_server": false, "snmp_version": "v3", "ntp": "10.0.0.200", "syslog": "10.0.0.100", "banner": true},
+    "sw-dc-east-02": {"ssh_version": 2, "telnet": false, "http_server": false, "snmp_version": "v3", "ntp": "10.0.0.200", "syslog": "10.0.0.100", "banner": true},
+    "sw-dc-east-03": {"ssh_version": 2, "telnet": false, "http_server": false, "snmp_version": "v3", "ntp": "10.0.0.200", "syslog": "10.0.0.100", "banner": true},
+    "rtr-core-01": {"ssh_version": 2, "telnet": false, "http_server": false, "snmp_version": "v3", "ntp": "10.0.0.200", "syslog": "10.0.0.100", "banner": true},
+    "rtr-core-02": {"ssh_version": 2, "telnet": false, "http_server": false, "snmp_version": "v3", "ntp": "10.0.0.200", "syslog": "10.0.0.100", "banner": true}
+}
