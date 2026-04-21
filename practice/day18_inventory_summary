@@ -1,0 +1,36 @@
+import json
+from collections import Counter
+
+def main():
+    try:
+        with open('data/device_inventory.json', 'r') as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        print("Error: 'data/device_inventory.json' file not found.")
+        return
+    
+    vendor_counts = Counter()
+    device_counts = Counter()
+    zone_counts = Counter()
+    
+    for i in data:
+        vendor = i.get('vendor', 'Unknown')
+        device = i.get('type', 'Unknown')
+        zone = i.get('zone', 'Unknown')
+        
+        vendor_counts[vendor] += 1
+        device_counts[device] += 1
+        zone_counts[zone] += 1
+    
+    print("Vendor Counts:")
+    for vendor, count in vendor_counts.items():
+        print(f"{vendor}: {count}")     
+    print("\nDevice Counts:")
+    for device, count in device_counts.items():
+        print(f"{device}: {count}")
+    print("\nZone Counts:")
+    for zone, count in zone_counts.items():
+        print(f"{zone}: {count}")
+
+if __name__ == "__main__":
+    main()

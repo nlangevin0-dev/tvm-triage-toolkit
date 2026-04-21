@@ -1,0 +1,22 @@
+[
+    {"hostname": "sw-dc-east-01", "vendor": "Cisco", "type": "switch", "zone": "internal_core"},
+    {"hostname": "sw-dc-east-02", "vendor": "Cisco", "type": "switch", "zone": "internal_core"},
+    {"hostname": "sw-dc-east-03", "vendor": "Juniper", "type": "switch", "zone": "internal_access"},
+    {"hostname": "sw-dc-west-01", "vendor": "Cisco", "type": "switch", "zone": "internal_core"},
+    {"hostname": "sw-dc-west-02", "vendor": "Juniper", "type": "switch", "zone": "distribution"},
+    {"hostname": "rtr-core-01", "vendor": "Cisco", "type": "router", "zone": "internal_core"},
+    {"hostname": "rtr-core-02", "vendor": "Cisco", "type": "router", "zone": "internal_core"},
+    {"hostname": "rtr-wan-01", "vendor": "Juniper", "type": "router", "zone": "wan_edge"},
+    {"hostname": "rtr-wan-02", "vendor": "Cisco", "type": "router", "zone": "wan_edge"},
+    {"hostname": "rtr-edge-01", "vendor": "Juniper", "type": "router", "zone": "perimeter"},
+    {"hostname": "fw-edge-01", "vendor": "Palo Alto", "type": "firewall", "zone": "perimeter"},
+    {"hostname": "fw-edge-02", "vendor": "Palo Alto", "type": "firewall", "zone": "perimeter"},
+    {"hostname": "fw-internal-01", "vendor": "Palo Alto", "type": "firewall", "zone": "internal_core"},
+    {"hostname": "fw-dc-west-01", "vendor": "Fortinet", "type": "firewall", "zone": "distribution"},
+    {"hostname": "sw-ot-01", "vendor": "Lantronix", "type": "switch", "zone": "ot_network"},
+    {"hostname": "sw-ot-02", "vendor": "Lantronix", "type": "switch", "zone": "ot_network"},
+    {"hostname": "sw-ot-03", "vendor": "Lantronix", "type": "switch", "zone": "ot_network"},
+    {"hostname": "rtr-mpls-01", "vendor": "Cisco", "type": "router", "zone": "wan_edge"},
+    {"hostname": "sw-access-01", "vendor": "Cisco", "type": "switch", "zone": "internal_access"},
+    {"hostname": "sw-access-02", "vendor": "Juniper", "type": "switch", "zone": "internal_access"}
+]
