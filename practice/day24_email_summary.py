@@ -32,7 +32,7 @@ for info in data:
 
 # Calculate SLA compliance percentage
 total_tickets = len(data)
-on_track = total_open_tickets
+on_track = total_open_tickets - len(overdue_tickets)
 closed = len(total_closed)
 sla_compliance_percentage = ((on_track + closed) / total_tickets) * 100
 
