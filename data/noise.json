@@ -1,0 +1,119 @@
+[
+    {
+        "plugin_id": 10407,
+        "hostname": "sw-dc-east-01",
+        "device_type": "Cisco IOS",
+        "severity": "High",
+        "cve": "N/A",
+        "zone": "internal_core",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 42263,
+        "hostname": "sw-access-01",
+        "device_type": "Juniper",
+        "severity": "Medium",
+        "cve": "N/A",
+        "zone": "internal_access",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 65821,
+        "hostname": "sw-ot-01",
+        "device_type": "Lantronix",
+        "severity": "High",
+        "cve": "N/A",
+        "zone": "ot_network",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 88001,
+        "hostname": "sw-dist-01",
+        "device_type": "Cisco IOS",
+        "severity": "Medium",
+        "cve": "N/A",
+        "zone": "distribution",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 77002,
+        "hostname": "fw-internal-01",
+        "device_type": "Palo Alto",
+        "severity": "Medium",
+        "cve": "CVE-2025-1111",
+        "zone": "internal_core",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 33445,
+        "hostname": "sw-access-03",
+        "device_type": "Cisco IOS",
+        "severity": "Low",
+        "cve": "N/A",
+        "zone": "internal_access",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 42263,
+        "hostname": "sw-dc-west-01",
+        "device_type": "Cisco IOS",
+        "severity": "Medium",
+        "cve": "N/A",
+        "zone": "internal_core",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 65821,
+        "hostname": "sw-ot-02",
+        "device_type": "Lantronix",
+        "severity": "High",
+        "cve": "N/A",
+        "zone": "ot_network",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 10407,
+        "hostname": "sw-dc-east-02",
+        "device_type": "Cisco IOS",
+        "severity": "High",
+        "cve": "N/A",
+        "zone": "internal_core",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 88001,
+        "hostname": "rtr-core-01",
+        "device_type": "Cisco IOS",
+        "severity": "Low",
+        "cve": "N/A",
+        "zone": "internal_core",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 33445,
+        "hostname": "sw-access-04",
+        "device_type": "Juniper",
+        "severity": "Low",
+        "cve": "N/A",
+        "zone": "internal_access",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 77002,
+        "hostname": "fw-dc-west-01",
+        "device_type": "Fortinet",
+        "severity": "Medium",
+        "cve": "N/A",
+        "zone": "distribution",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 65821,
+        "hostname": "sw-ot-03",
+        "device_type": "Lantronix",
+        "severity": "High",
+        "cve": "N/A",
+        "zone": "ot_network",
+        "internet_facing": false
+    }
+]

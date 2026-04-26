@@ -1,0 +1,5 @@
+[
+    {"plugin_id": 10407, "device_type": "Cisco IOS", "reason": "Banner reports old version but device is patched"},
+    {"plugin_id": 42263, "device_type": "Juniper", "reason": "SSHv1 advertised in banner but disabled in config"},
+    {"plugin_id": 65821, "device_type": "Lantronix", "reason": "SNMP v1 detected but blocked by ACL"}
+]

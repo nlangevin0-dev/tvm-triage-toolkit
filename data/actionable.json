@@ -1,0 +1,65 @@
+[
+    {
+        "plugin_id": 55902,
+        "hostname": "rtr-core-02",
+        "device_type": "Cisco IOS",
+        "severity": "Critical",
+        "cve": "CVE-2024-1234",
+        "zone": "internal_core",
+        "internet_facing": false
+    },
+    {
+        "plugin_id": 78432,
+        "hostname": "fw-edge-01",
+        "device_type": "Palo Alto",
+        "severity": "Critical",
+        "cve": "CVE-2024-5678",
+        "zone": "perimeter",
+        "internet_facing": true
+    },
+    {
+        "plugin_id": 91345,
+        "hostname": "rtr-wan-01",
+        "device_type": "Cisco IOS",
+        "severity": "High",
+        "cve": "CVE-2024-9012",
+        "zone": "wan_edge",
+        "internet_facing": true
+    },
+    {
+        "plugin_id": 10407,
+        "hostname": "rtr-edge-02",
+        "device_type": "Juniper",
+        "severity": "High",
+        "cve": "N/A",
+        "zone": "perimeter",
+        "internet_facing": true
+    },
+    {
+        "plugin_id": 78432,
+        "hostname": "fw-edge-02",
+        "device_type": "Palo Alto",
+        "severity": "Critical",
+        "cve": "CVE-2024-5678",
+        "zone": "perimeter",
+        "internet_facing": true
+    },
+    {
+        "plugin_id": 55902,
+        "hostname": "rtr-mpls-01",
+        "device_type": "Cisco IOS",
+        "severity": "Critical",
+        "cve": "CVE-2024-1234",
+        "zone": "wan_edge",
+        "internet_facing": true
+    },
+    {
+        "plugin_id": 91345,
+        "hostname": "rtr-wan-02",
+        "device_type": "Cisco IOS",
+        "severity": "High",
+        "cve": "CVE-2024-9012",
+        "zone": "wan_edge",
+        "internet_facing": true
+    }
+]
