@@ -8,10 +8,7 @@
         "cvss": 9.8,
         "vpr": 9.1,
         "title": "Remote Code Execution in IOS",
-        "cve": "CVE-2024-1234",
-        "exploitability": "LOW",
-        "deadline": "2026-07-25",
-        "fix": "Upgrade Cisco IOS to version 17.3.8 or later"
+        "cve": "CVE-2024-1234"
     },
     {
         "plugin_id": 78432,
@@ -22,10 +19,7 @@
         "cvss": 9.1,
         "vpr": 8.7,
         "title": "PAN-OS Authentication Bypass",
-        "cve": "CVE-2024-5678",
-        "exploitability": "CRITICAL",
-        "deadline": "2026-05-26",
-        "fix": "Apply PAN-OS hotfix 11.1.2-h3"
+        "cve": "CVE-2024-5678"
     },
     {
         "plugin_id": 91345,
@@ -36,9 +30,6 @@
         "cvss": 8.1,
         "vpr": 7.3,
         "title": "Cisco IOS Command Injection",
-        "cve": "CVE-2024-9012",
-        "exploitability": "HIGH",
-        "deadline": "2026-05-26",
-        "fix": "Disable vulnerable HTTP service and apply ACL to management interface"
+        "cve": "CVE-2024-9012"
     }
 ]

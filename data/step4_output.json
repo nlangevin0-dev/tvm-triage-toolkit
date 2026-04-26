@@ -20,7 +20,7 @@
         "opened": "2026-03-20",
         "deadline": "2026-04-19",
         "status": "open",
-        "sla_status": "AT RISK"
+        "sla_status": "OVERDUE"
     },
     {
         "ticket_id": "TKT-003",
